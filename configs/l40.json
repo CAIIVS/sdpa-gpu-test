@@ -1,0 +1,11 @@
+{
+  "gpu": "l40spcie",
+  "input_dims": [ 2, 3 ],
+  "input_channels": [ 1, 2, 8 ],
+  "input_lengths": [ 32, 64, 128, 256, 512, 1024 ],
+  "backend_configs": [
+    {"mem": true, "flash": false, "math": false},
+    {"mem": false, "flash": true, "math": false},
+    {"mem": false, "flash": false, "math": true}
+  ]
+}
