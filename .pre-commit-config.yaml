@@ -1,0 +1,16 @@
+repos:
+  # ruff linting and formatting
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.6.9
+    hooks:
+      - id: ruff
+        name: lint with ruff
+        types_or: [python, pyi]
+      - id: ruff
+        name: sort imports with ruff
+        types_or: [python, pyi]
+        args: [--select, I, --fix]
+      - id: ruff-format
+        name: format with ruff
+        types_or: [python, pyi]
+
